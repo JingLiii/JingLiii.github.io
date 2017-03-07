@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      HTML-01 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="HTML-01浏览器内核介绍
+浏览器的内核分成两个部分: 渲染引擎和JS引擎
+
+Trident(IE内核)
+Gecko(火狐内核)
+webkit(Safari内核)
+Bink(谷歌浏览器)
+Presto(Opera)WEB标准的构成
+结构标准: 对网页元素进行整理和分类,主要包括XML和XHTML
+样式标准: 用于对网页元素的版式,颜色,大小等外观进行设置,主要是指CSS
+行为标准: 网页模型的定">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML-01 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2017/03/08/01 HTML/01HTML-01/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="HTML-01浏览器内核介绍
+浏览器的内核分成两个部分: 渲染引擎和JS引擎
+
+Trident(IE内核)
+Gecko(火狐内核)
+webkit(Safari内核)
+Bink(谷歌浏览器)
+Presto(Opera)WEB标准的构成
+结构标准: 对网页元素进行整理和分类,主要包括XML和XHTML
+样式标准: 用于对网页元素的版式,颜色,大小等外观进行设置,主要是指CSS
+行为标准: 网页模型的定">
+<meta property="og:image" content="http://yoursite.com/./img/01html01-zifu.png">
+<meta property="og:updated_time" content="2017-03-05T11:33:16.863Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML-01 | 张润昊">
+<meta name="twitter:description" content="HTML-01浏览器内核介绍
+浏览器的内核分成两个部分: 渲染引擎和JS引擎
+
+Trident(IE内核)
+Gecko(火狐内核)
+webkit(Safari内核)
+Bink(谷歌浏览器)
+Presto(Opera)WEB标准的构成
+结构标准: 对网页元素进行整理和分类,主要包括XML和XHTML
+样式标准: 用于对网页元素的版式,颜色,大小等外观进行设置,主要是指CSS
+行为标准: 网页模型的定">
+<meta name="twitter:image" content="http://yoursite.com/./img/01html01-zifu.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">HTML-01</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-03-08" class="post-meta__date date">2017-03-08</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h1 id="HTML-01"><a href="#HTML-01" class="headerlink" title="HTML-01"></a>HTML-01</h1><h2 id="浏览器内核介绍"><a href="#浏览器内核介绍" class="headerlink" title="浏览器内核介绍"></a>浏览器内核介绍</h2><blockquote>
+<p>浏览器的内核分成两个部分: 渲染引擎和JS引擎</p>
+<ul>
+<li>Trident(IE内核)</li>
+<li>Gecko(火狐内核)</li>
+<li>webkit(Safari内核)</li>
+<li>Bink(谷歌浏览器)</li>
+<li>Presto(Opera)<h2 id="WEB标准的构成"><a href="#WEB标准的构成" class="headerlink" title="WEB标准的构成"></a>WEB标准的构成</h2></li>
+<li>结构标准: 对网页元素进行整理和分类,主要包括XML和XHTML</li>
+<li>样式标准: 用于对网页元素的版式,颜色,大小等外观进行设置,主要是指CSS</li>
+<li>行为标准: 网页模型的定义及交互的编写,主要是包括DOM和ECMAScript两个部分<h2 id="HTML初识"><a href="#HTML初识" class="headerlink" title="HTML初识"></a>HTML初识</h2><h3 id="骨架构成"><a href="#骨架构成" class="headerlink" title="骨架构成:"></a>骨架构成:</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>   </div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span>     </div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="标签的分类"><a href="#标签的分类" class="headerlink" title="标签的分类"></a>标签的分类</h3><ul>
+<li>双标签: 开始标签和闭合标签</li>
+<li>单标签: 只有一个标签,没有结束标签<h3 id="HTML标签关系"><a href="#HTML标签关系" class="headerlink" title="HTML标签关系"></a>HTML标签关系</h3></li>
+<li>嵌套关系</li>
+<li>并列关系<h2 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h2></li>
+<li>gb2312: 简单中文,包括6763个汉字</li>
+<li>BIG5 繁体中文 港澳台等</li>
+<li>GBK 兼容bg2312,并支持繁体字</li>
+<li>UTF-8 最为常用的字符,包括全世界所有国家需要用到的字符<h2 id="HMTL常用标签"><a href="#HMTL常用标签" class="headerlink" title="HMTL常用标签"></a>HMTL常用标签</h2><h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签:"></a>标题标签:</h3><blockquote>
+<p>六个等级的标题,使页面更加具有语义化</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>、<span class="tag">&lt;<span class="name">h2</span>&gt;</span>、<span class="tag">&lt;<span class="name">h3</span>&gt;</span>、<span class="tag">&lt;<span class="name">h4</span>&gt;</span>、<span class="tag">&lt;<span class="name">h5</span>&gt;</span>和<span class="tag">&lt;<span class="name">h6</span>&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<h3 id="段落标签"><a href="#段落标签" class="headerlink" title="段落标签:"></a>段落标签:</h3><blockquote>
+<p>包含一段文本内容<br><code>&lt;p&gt;&lt;/p&gt;</code></p>
+<h3 id="水平线标签"><a href="#水平线标签" class="headerlink" title="水平线标签:"></a>水平线标签:</h3><p>段落隔开,保证页面结构<br><code>&lt;hr /&gt;</code></p>
+<h3 id="换行标签"><a href="#换行标签" class="headerlink" title="换行标签"></a>换行标签</h3><p>使某文本内容强制换行<br><code>&lt;br /&gt;</code></p>
+<h3 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h3><ul>
+<li><b></b><strong></strong>: 以粗体显示</li>
+<li><i></i><em></em>: 斜体显示</li>
+<li><s></s><del></del>: 加删除线</li>
+<li><u></u><ins></ins>: 加下划线<h3 id="图像标签"><a href="#图像标签" class="headerlink" title="图像标签"></a>图像标签</h3>向网页中添加图片所使用的标签<figure class="highlight plain"><figcaption><span>/>```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">* src: 图片路径</div><div class="line">* alt: 鼠标不能显示时的替换文本</div><div class="line">* title: 鼠标悬停时显示的内容</div><div class="line">* width,height: 图像的高宽,XHTML中不支持设置页面的百分比</div><div class="line">* border: 数字,表示图像边框的宽度</div><div class="line">### 链接标签</div><div class="line">&gt; 创建超链接</div><div class="line">* href: 链接目标的地址</div><div class="line">* target: 页面的打开方式._self: 默认值, _blank</div><div class="line">* base: 可以设置整体的打开状态</div><div class="line">```html</div><div class="line">&lt;base target=&quot;blank&quot; /&gt;</div></pre></td></tr></table></figure></li>
+</ul>
+</blockquote>
+<ul>
+<li>rel: 设置不抓取链接</li>
+<li>可以使用id名实现跳转到什么位置.<h3 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h3><blockquote>
+<p><img src="./img/01html01-zifu.png" alt=""></p>
+<h3 id="注释标签"><a href="#注释标签" class="headerlink" title="注释标签"></a>注释标签</h3><p>html中的注释标签:<!-- 注释语句 --></p>
+<h2 id="路径问题"><a href="#路径问题" class="headerlink" title="路径问题"></a>路径问题</h2><h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>就是基于本文件所在的位置进行设置</p>
+</blockquote>
+</li>
+<li>./: 表示同一路径</li>
+<li>../: 表示返回了上一目录</li>
+<li>../../表示继续向上返回上一层目录<h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><blockquote>
+<p>填写完整路径</p>
+</blockquote>
+</li>
+</ul>
+
+  </section>
+
+  
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
