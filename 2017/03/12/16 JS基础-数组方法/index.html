@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS基础-数组常用方法 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="JS基础-数组常用方法Array
+数组为JS提供的内置对象
+属性
+.length属性
+数组中最大索引值 + 1 ;1234var arr = [&apos;aa&apos;, &apos;bb&apos;, &quot;cc&quot;, &apos;dd&apos;, &apos;ee&apos;];delete(arr[3]);console.log(arr) //[&quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot;, 4: &quot;ee&quot;]console.log(arr.length) //5
+
+
+
+方法
+ins">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS基础-数组常用方法 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2017/03/12/16 JS基础-数组方法/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="JS基础-数组常用方法Array
+数组为JS提供的内置对象
+属性
+.length属性
+数组中最大索引值 + 1 ;1234var arr = [&apos;aa&apos;, &apos;bb&apos;, &quot;cc&quot;, &apos;dd&apos;, &apos;ee&apos;];delete(arr[3]);console.log(arr) //[&quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot;, 4: &quot;ee&quot;]console.log(arr.length) //5
+
+
+
+方法
+ins">
+<meta property="og:updated_time" content="2017-03-10T12:13:23.859Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS基础-数组常用方法 | 张润昊">
+<meta name="twitter:description" content="JS基础-数组常用方法Array
+数组为JS提供的内置对象
+属性
+.length属性
+数组中最大索引值 + 1 ;1234var arr = [&apos;aa&apos;, &apos;bb&apos;, &quot;cc&quot;, &apos;dd&apos;, &apos;ee&apos;];delete(arr[3]);console.log(arr) //[&quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot;, 4: &quot;ee&quot;]console.log(arr.length) //5
+
+
+
+方法
+ins">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS基础-数组常用方法</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-03-12" class="post-meta__date date">2017-03-12</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h1 id="JS基础-数组常用方法"><a href="#JS基础-数组常用方法" class="headerlink" title="JS基础-数组常用方法"></a>JS基础-数组常用方法</h1><h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><blockquote>
+<p>数组为JS提供的内置对象</p>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><ul>
+<li>.length属性</li>
+<li>数组中最大索引值 + 1 ;<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">"cc"</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">delete</span>(arr[<span class="number">3</span>]);</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", 4: "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(arr.length) <span class="comment">//5</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li><p>instanceof</p>
+<ul>
+<li>判断某个对象,是否属于某个构造函数</li>
+<li>前面是需要判断的对象, 后面是构造函数</li>
+<li>此为表达式,不需要进行调用使用<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">"cc"</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="comment">// var ret = arr instanceof Object;//true</span></div><div class="line"><span class="keyword">var</span> ret = arr <span class="keyword">instanceof</span> <span class="built_in">Array</span>;</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//true</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>Array.isArray(需要判断的对象)</p>
+<ul>
+<li>返回值为Boolean类型<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">"cc"</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = <span class="built_in">Array</span>.isArray(arr);</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//true</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>toString()</p>
+<ul>
+<li>将数组转化为字符串</li>
+<li>每一项用 , 进行分割<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">"cc"</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.toString();</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//'aa,bb,cc,dd,ee'</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>valueOf()</p>
+<ul>
+<li>返回数组对象本身.(‘’’’’’真不知道有什么用’’’’’’)<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">"cc"</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.valueOf();</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>join(分隔符)</p>
+<ul>
+<li>返回一个字符串</li>
+<li>使用传入的分隔符,将各项链接起来</li>
+<li>不传参,默认为 , <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">"cc"</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.join(<span class="string">'|'</span>);</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//aa|bb|cc|dd|ee</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>方法 : push pop unshift shift</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)</div><div class="line"><span class="built_in">console</span>.log(arr); <span class="comment">//[1, 2, 3, 4, 5</span></div><div class="line"><span class="comment">//push(): 向数组末尾进行添加,返回添加后的长度</span></div><div class="line"><span class="keyword">var</span> ret = arr.push(<span class="string">'a'</span>);</div><div class="line"><span class="built_in">console</span>.log(ret); <span class="comment">//6</span></div><div class="line"><span class="built_in">console</span>.log(arr); <span class="comment">//[1, 2, 3, 4, 5, "a"]</span></div><div class="line"><span class="comment">//pop(): 删除数组最末尾的元素, 返回被删除的元素</span></div><div class="line"><span class="keyword">var</span> ret = arr.pop();</div><div class="line"><span class="built_in">console</span>.log(ret); <span class="comment">//a</span></div><div class="line"><span class="built_in">console</span>.log(arr); <span class="comment">//[1, 2, 3, 4, 5]</span></div><div class="line"><span class="comment">//unshift(): 向数组首位添加元素, 并返回添加后的长度</span></div><div class="line"><span class="keyword">var</span> ret = arr.unshift(<span class="string">'a'</span>);</div><div class="line"><span class="built_in">console</span>.log(ret); <span class="comment">//6</span></div><div class="line"><span class="built_in">console</span>.log(arr); <span class="comment">//["a", 1, 2, 3, 4, 5]</span></div><div class="line"><span class="comment">//shift(): //删除数组的第一个元素, 并返回删除的元素</span></div><div class="line"><span class="keyword">var</span> ret = arr.shift();</div><div class="line"><span class="built_in">console</span>.log(ret); <span class="comment">//a</span></div><div class="line"><span class="built_in">console</span>.log(arr); <span class="comment">//[1, 2, 3, 4, 5]</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>reverse()</p>
+<ul>
+<li>翻转数组</li>
+<li>将原数组进行翻转</li>
+<li>并将翻转后的数组返回<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">"cc"</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.reverse();</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["ee", "dd", "cc", "bb", "aa"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//["ee", "dd", "cc", "bb", "aa"]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>sort(fn)</p>
+<ul>
+<li>需要传入回调函数</li>
+<li>回调函数的两个参数,代表前后的两个值</li>
+<li>排序规则根据比较两个参数后, 返回 的 大于0,等于0,小于0 进行排序<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">5</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">6</span>, <span class="number">4</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (a &gt; b) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &lt; b) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//[6, 5, 4, 3, 2, 1]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//[6, 5, 4, 3, 2, 1]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>concat(需要拼接的数据)</p>
+<ul>
+<li>将参数拼接到当前的数组中</li>
+<li>如果传入的是数组,会拆分每一项数据进行拼接</li>
+<li>如果是对象,会将整个对象放到最后一项<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">'cc'</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> arr1 = [<span class="string">'s'</span>, <span class="string">'d'</span>]</div><div class="line"><span class="keyword">var</span> ret = arr.concat(arr1);</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//["aa", "bb", "cc", "dd", "ee", "s", "d"]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>slice(开始的索引,结束的索引)</p>
+<ul>
+<li>从开始索引开始截取,包括开始索引</li>
+<li>截取到结束索引, 不包括结束索引</li>
+<li>返回值是截取到的新数组<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">'cc'</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.slice(<span class="number">1</span>, <span class="number">3</span>)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//["bb", "cc"]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>splice(开始索引,结束索引,替换的数据)</p>
+<ul>
+<li>从开始位置开始截取,包括开始位置</li>
+<li>截取到结束索引,不包括结束索引</li>
+<li>截取的数据作为新数组返回</li>
+<li>原数组失去被截取的数据,并使用替换位置数据进行替换<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">'cc'</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.splice(<span class="number">1</span>, <span class="number">3</span>, <span class="string">'ff'</span>)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "ff", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//["bb", "cc", "dd"]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>indexOf(需要查找的数据),</p>
+</li>
+<li><p>lastIndexOf():从后往前查找   </p>
+<ul>
+<li>返回元素所在的索引</li>
+<li>若是不存在返回 -1<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">'cc'</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.indexOf(<span class="string">'cc'</span>)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//2</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>every(fn)</p>
+<ul>
+<li>参数需要传入回调函数</li>
+<li>函数参数代表每一个元素</li>
+<li>返回一个判断条件,若是都满足的话 返回true, 有一项不满足 停止遍历 返回false<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">'cc'</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.every(<span class="function"><span class="keyword">function</span>(<span class="params">ele</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> ele != <span class="string">'aa'</span>;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//false</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>filter(fn)</p>
+<ul>
+<li>判断每一项是否满足条件,</li>
+<li>将满足条件,返回值为true的元素,组成新数组进行返回</li>
+<li>第三个参数表示数组本身<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>, <span class="string">'bb'</span>, <span class="string">'cc'</span>, <span class="string">'dd'</span>, <span class="string">'ee'</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.filter(<span class="function"><span class="keyword">function</span>(<span class="params">ele, index, arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> ele == <span class="string">'aa'</span></div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//["aa", "bb", "cc", "dd", "ee"]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//["aa"]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>foreach(fn)</p>
+<ul>
+<li>遍历数组</li>
+<li>可以查看数据中的每一项</li>
+<li>但是没有返回值,也不能对原数组进行操作</li>
+<li>第三个参数表示数组本身<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">100</span>, <span class="number">110</span>, <span class="number">120</span>, <span class="number">130</span>, <span class="number">140</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, arr</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(item + index);</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//[100, 110, 120, 130, 140]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//undefined</span></div><div class="line"><span class="comment">//110,111,122,133,144</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>map(fn)</p>
+<ul>
+<li>对数组中的每一项进行操作</li>
+<li>将操作后的元素,形成一个新的数组返回</li>
+<li>第三个参数表示数组本身<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">100</span>, <span class="number">110</span>, <span class="number">120</span>, <span class="number">130</span>, <span class="number">140</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">item, inde, arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> item + index;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//[100, 110, 120, 130, 140]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//[100, 111, 122, 133, 144]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>some(fn)</p>
+<ul>
+<li>根据回调函数对每一个元素进行操作</li>
+<li>如果每一个回调函数的返回值都是false 就返回false</li>
+<li>有一个返回true的 就返回true</li>
+<li>第三个参数表示数组本身<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">100</span>, <span class="number">110</span>, <span class="number">120</span>, <span class="number">130</span>, <span class="number">140</span>];</div><div class="line"><span class="keyword">var</span> ret = arr.some(<span class="function"><span class="keyword">function</span>(<span class="params">item, index, arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (item == <span class="number">100</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(arr) <span class="comment">//[100, 110, 120, 130, 140]</span></div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//true</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>清空数组</p>
+<ul>
+<li>array.splice(0,array.length); //删除数组中所有项目 </li>
+<li>array.length = 0; //length属性可以赋值，其它语言中length是只读</li>
+<li>array = [];  //<strong>推荐</strong></li>
+</ul>
+</li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

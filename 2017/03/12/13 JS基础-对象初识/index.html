@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS基础-对象基础 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="JS基础-对象基础对象的概念
+无序的属性集合:
+基本概念具有特指的一类叫做对象
+
+由属性和方法组成
+对象内部的变量叫做属性. 外部的变量叫做变量.
+对象内部的函数叫做方法. 外部的函数叫做函数绑定属性和方法
+方法一: 直接通过 . 进行绑定12345678var obj = new Object();//绑定属性obj.name = &apos;zhangsan&apos;;obj.age = 20;//绑定方法ob">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS基础-对象基础 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2017/03/12/13 JS基础-对象初识/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="JS基础-对象基础对象的概念
+无序的属性集合:
+基本概念具有特指的一类叫做对象
+
+由属性和方法组成
+对象内部的变量叫做属性. 外部的变量叫做变量.
+对象内部的函数叫做方法. 外部的函数叫做函数绑定属性和方法
+方法一: 直接通过 . 进行绑定12345678var obj = new Object();//绑定属性obj.name = &apos;zhangsan&apos;;obj.age = 20;//绑定方法ob">
+<meta property="og:updated_time" content="2017-03-09T07:35:51.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS基础-对象基础 | 张润昊">
+<meta name="twitter:description" content="JS基础-对象基础对象的概念
+无序的属性集合:
+基本概念具有特指的一类叫做对象
+
+由属性和方法组成
+对象内部的变量叫做属性. 外部的变量叫做变量.
+对象内部的函数叫做方法. 外部的函数叫做函数绑定属性和方法
+方法一: 直接通过 . 进行绑定12345678var obj = new Object();//绑定属性obj.name = &apos;zhangsan&apos;;obj.age = 20;//绑定方法ob">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS基础-对象基础</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-03-12" class="post-meta__date date">2017-03-12</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h1 id="JS基础-对象基础"><a href="#JS基础-对象基础" class="headerlink" title="JS基础-对象基础"></a>JS基础-对象基础</h1><h2 id="对象的概念"><a href="#对象的概念" class="headerlink" title="对象的概念"></a>对象的概念</h2><blockquote>
+<p>无序的属性集合:</p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>具有特指的一类叫做对象</p>
+<ul>
+<li>由属性和方法组成</li>
+<li>对象内部的变量叫做属性. 外部的变量叫做变量.</li>
+<li>对象内部的函数叫做方法. 外部的函数叫做函数<h3 id="绑定属性和方法"><a href="#绑定属性和方法" class="headerlink" title="绑定属性和方法"></a>绑定属性和方法</h3></li>
+<li>方法一: 直接通过 . 进行绑定<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"><span class="comment">//绑定属性</span></div><div class="line">obj.name = <span class="string">'zhangsan'</span>;</div><div class="line">obj.age = <span class="number">20</span>;</div><div class="line"><span class="comment">//绑定方法</span></div><div class="line">obj.fn = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(obj.name + <span class="string">"的方法"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>方法二: [变量名] 进行绑定<ul>
+<li>此方法更为灵活<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"><span class="keyword">var</span> str = <span class="string">'name'</span>;</div><div class="line">obj[str] = <span class="string">'zhangsan'</span>;</div><div class="line"><span class="built_in">console</span>.log(obj.name)<span class="comment">//zhangsan</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="对象的创建"><a href="#对象的创建" class="headerlink" title="对象的创建"></a>对象的创建</h2><h3 id="new-Object"><a href="#new-Object" class="headerlink" title="new Object();"></a>new Object();</h3><blockquote>
+<p>new 后面调用的函数,我们称之为构造函数.Obeject()我们把他视之为构造函数,构造函数本质就是一个函数,只不过构造函数的目的是为了创建新对象,为新对象设置初始化(设置对象的属性)</p>
+<ul>
+<li>new之后的过程<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> Person(<span class="string">"zs"</span>,<span class="number">18</span>,<span class="number">10000</span>);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<ol>
+<li>创建一个新对象</li>
+<li>将构造函数的作用域赋值给新对象,所以this = person</li>
+<li>执行构造函数,为person设置属性</li>
+<li>返回新对象<h3 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h3><blockquote>
+<p>直接通过 <code>{}</code> 的方式进行创建</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj2 = &#123;<span class="attr">name</span>:<span class="string">"李四"</span>&#125;;</div><div class="line"><span class="keyword">var</span> obj3 = &#123;&#125;;</div><div class="line"><span class="keyword">var</span> obj4 = &#123;<span class="attr">name</span>:<span class="string">"张三"</span>&#125;;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(obj1);</div><div class="line"><span class="built_in">console</span>.log(obj2);</div><div class="line"><span class="built_in">console</span>.log(obj3);</div><div class="line"><span class="comment">//对象进行比较的时候,比较的是内存地址,每创建一个对象,都会开辟一个新的内存地址</span></div><div class="line"><span class="built_in">console</span>.log(obj1 == obj4);</div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ol>
+<h2 id="JSOM"><a href="#JSOM" class="headerlink" title="JSOM"></a>JSOM</h2><blockquote>
+<p>对象形式的一种,是兼职对的形式</p>
+<h3 id="基本格式"><a href="#基本格式" class="headerlink" title="基本格式"></a>基本格式</h3><ul>
+<li>属性名必须用双引号括起来<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> aaa = &#123;<span class="string">"name"</span>:<span class="string">"张三"</span>,<span class="string">"age"</span>:<span class="number">18</span>,<span class="string">"address"</span>:<span class="string">"光棍村..."</span>&#125;;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><ul>
+<li>可以把符合JSON语法的字符串解析成对象形式<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'&#123;"name":"张三","age":18,"address":"光棍村..."&#125;'</span>;</div><div class="line"><span class="keyword">var</span> obj = <span class="built_in">JSON</span>.parse(str);</div><div class="line"><span class="built_in">console</span>.log(obj);<span class="comment">//Object &#123;name: "张三", age: 18, address: "光棍村..."&#125;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h2><ul>
+<li>使用for..in..进行遍历<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"张三"</span>,</div><div class="line">    <span class="string">"age"</span>: <span class="number">18</span>,</div><div class="line">    <span class="string">"address"</span>: <span class="string">"光棍村..."</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> str) &#123;</div><div class="line">    <span class="comment">//1.k代表json中的所有属性</span></div><div class="line">    <span class="comment">//2.json[k]代表json中的所有属性值.</span></div><div class="line">    <span class="built_in">console</span>.log(k);</div><div class="line">    <span class="built_in">console</span>.log(str[k]);</div><div class="line">&#125;</div></pre></td></tr></table></figure></li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

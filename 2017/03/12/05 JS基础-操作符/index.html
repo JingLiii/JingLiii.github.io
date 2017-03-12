@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS基础-操作符 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="JS基础-操作符数学运算符
+
+
+“ + “: 加法运算符
+若是有一个操作符为字符串,就把另一个操作符转化为字符串,然后拼接起来1var str = &quot;abc&quot; + 123;   //返回&quot;abc123&quot;
+
+
+
+
+
+
+“ - “:  减法运算符
+“ * “:  乘法运算符
+“ / “:  除法运算符
+“/0”: 对0做除法,返回Infinity
+
+
+“ % “:  取余运算符
+非数值型取余，返回NA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS基础-操作符 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2017/03/12/05 JS基础-操作符/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="JS基础-操作符数学运算符
+
+
+“ + “: 加法运算符
+若是有一个操作符为字符串,就把另一个操作符转化为字符串,然后拼接起来1var str = &quot;abc&quot; + 123;   //返回&quot;abc123&quot;
+
+
+
+
+
+
+“ - “:  减法运算符
+“ * “:  乘法运算符
+“ / “:  除法运算符
+“/0”: 对0做除法,返回Infinity
+
+
+“ % “:  取余运算符
+非数值型取余，返回NA">
+<meta property="og:image" content="http://yoursite.com/img/05.PNG">
+<meta property="og:image" content="http://yoursite.com/img/06.png">
+<meta property="og:updated_time" content="2017-02-15T12:33:27.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS基础-操作符 | 张润昊">
+<meta name="twitter:description" content="JS基础-操作符数学运算符
+
+
+“ + “: 加法运算符
+若是有一个操作符为字符串,就把另一个操作符转化为字符串,然后拼接起来1var str = &quot;abc&quot; + 123;   //返回&quot;abc123&quot;
+
+
+
+
+
+
+“ - “:  减法运算符
+“ * “:  乘法运算符
+“ / “:  除法运算符
+“/0”: 对0做除法,返回Infinity
+
+
+“ % “:  取余运算符
+非数值型取余，返回NA">
+<meta name="twitter:image" content="http://yoursite.com/img/05.PNG">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS基础-操作符</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-03-12" class="post-meta__date date">2017-03-12</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h1 id="JS基础-操作符"><a href="#JS基础-操作符" class="headerlink" title="JS基础-操作符"></a>JS基础-操作符</h1><h2 id="数学运算符"><a href="#数学运算符" class="headerlink" title="数学运算符"></a>数学运算符</h2><blockquote>
+<p><img src="img/05.PNG" alt=""></p>
+<ul>
+<li>“ + “: 加法运算符<ul>
+<li>若是有一个操作符为字符串,就把另一个操作符转化为字符串,然后拼接起来<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"abc"</span> + <span class="number">123</span>;   <span class="comment">//返回"abc123"</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>“ - “:  减法运算符</li>
+<li>“ * “:  乘法运算符</li>
+<li>“ / “:  除法运算符<ul>
+<li>“/0”: 对0做除法,返回Infinity</li>
+</ul>
+</li>
+<li>“ % “:  取余运算符<ul>
+<li>非数值型取余，返回NAN<h2 id="一元运算符"><a href="#一元运算符" class="headerlink" title="一元运算符"></a>一元运算符</h2><blockquote>
+<p>只能操作一个值的元素符称为一元运算符,分为前置型和后置型</p>
+<h3 id="“-“-数值自增1"><a href="#“-“-数值自增1" class="headerlink" title="“ ++ “: 数值自增1;"></a>“ ++ “: 数值自增1;</h3><h3 id="“-–-“-数值自减1"><a href="#“-–-“-数值自减1" class="headerlink" title="“ – “: 数值自减1;"></a>“ – “: 数值自减1;</h3><h3 id="前置型-数值在参与运算前先自增1-再参与运算"><a href="#前置型-数值在参与运算前先自增1-再参与运算" class="headerlink" title="前置型: 数值在参与运算前先自增1,再参与运算"></a>前置型: 数值在参与运算前先自增1,再参与运算</h3><h3 id="后置型-数值自增1-将变化后的数字保存起来-然后用变化前的数参与运算-当再次用到这个数值的时候-就采用变化后的数"><a href="#后置型-数值自增1-将变化后的数字保存起来-然后用变化前的数参与运算-当再次用到这个数值的时候-就采用变化后的数" class="headerlink" title="后置型: 数值自增1,将变化后的数字保存起来,然后用变化前的数参与运算,当再次用到这个数值的时候,就采用变化后的数"></a>后置型: 数值自增1,将变化后的数字保存起来,然后用变化前的数参与运算,当再次用到这个数值的时候,就采用变化后的数</h3><p>也就是第一次用到的时候并不会改变值,第二次用到的时候值就改变了</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> b = ++a;</div><div class="line"><span class="keyword">var</span> c = a--;</div><div class="line"><span class="built_in">console</span>.log(c);<span class="comment">//11</span></div><div class="line"><span class="built_in">console</span>.log(a);<span class="comment">//10</span></div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="逻辑运算符-短路操作"><a href="#逻辑运算符-短路操作" class="headerlink" title="逻辑运算符 短路操作"></a>逻辑运算符 <strong>短路操作</strong></h2><h3 id="amp-amp-与运算-and"><a href="#amp-amp-与运算-and" class="headerlink" title="&amp;&amp;  与运算 and"></a>&amp;&amp;  与运算 and</h3><blockquote>
+<p>两个操作数同时为true，结果为true，否则都是false</p>
+<ul>
+<li>属于”短路”操作,即第一个值能够决定结果,就不会再对第二个值进行求值判断</li>
+<li>两个都为true,结果为true</li>
+<li>有一个结果为false,结果为false</li>
+<li>也就是说当第一个值为false时,就不会再运算第二个了,找false即可.<h3 id="或运算-or"><a href="#或运算-or" class="headerlink" title="||  或运算 or"></a>||  或运算 or</h3>两个操作数有一个为true，结果为true，否则为false</li>
+<li>属于”短路”操作</li>
+<li>有一个为true,就是true</li>
+<li>两个都是false,结果是false</li>
+<li>也就是说,只要第一个为true,就不再进行后面的运算.<h3 id="取反-not"><a href="#取反-not" class="headerlink" title="! 取反 not"></a>! 取反 not</h3>逻辑取反,true变false,false变true</li>
+<li>如果操作的不是布尔类型,会先对其进行转换,再对其取反<h2 id="短路操作"><a href="#短路操作" class="headerlink" title="短路操作"></a><strong>短路操作</strong></h2><h3 id="amp-amp-与"><a href="#amp-amp-与" class="headerlink" title="&amp;&amp; 与"></a>&amp;&amp; 与</h3>总结: 会从第一个操作数开始找false,找到就返回,未找到返回最后一个.</li>
+<li>如果第一个操作数是对象,就返回第二个操作数</li>
+<li>如果第一个操作数返回true,并且第二个操作时是对象,返回第二个操作数</li>
+<li>如果有一个数是null/NaN/undefiend,就返回null/NaN/undefiend</li>
+<li>操作是两边都不是布尔类型,会把操作数转换成布尔类型,返回值是false的那个操作数</li>
+<li>如果两边都是false,就会返回第一个.<h3 id="或"><a href="#或" class="headerlink" title="|| 或"></a>|| 或</h3>总结: 会从第一个操作数开始找true,找到就返回,未找到返回最后一个.</li>
+<li>如果第一个操作数是对象,就返回第一个操作数</li>
+<li>如果第二个操作数是对象,并且第一个操作数是false,就返回第二个操作数</li>
+<li>两边都不是布尔类型的话,先转换,返回是true的那个操作数</li>
+<li>两边都是true,返回第一个<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><img src="img/06.png" alt=""><h3 id="gt-lt-gt-lt"><a href="#gt-lt-gt-lt" class="headerlink" title="&gt; &lt; &gt;= &lt;="></a>&gt; &lt; &gt;= &lt;=</h3></li>
+<li>在比较两个字符串时,比较的是两个字符串对应位置的每个字符的字符编码值</li>
+<li>在比较数值和字符串时,字符串都会变转化成数值,然后以数值的方式与另一个数进行比较</li>
+<li>如果一边是数字,一边是Boolean,先把Boolean的值转换成数字在比较.</li>
+<li><strong>true转变为数字为1,false转变为数字为0</strong><h3 id=""><a href="#" class="headerlink" title="== != === !=="></a>== != === !==</h3></li>
+<li>相等比较的是值,全等比较的是值和类型<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> result = <span class="string">"55"</span>  ==  <span class="number">55</span>;  <span class="comment">//true</span></div><div class="line"><span class="keyword">var</span> result = <span class="string">"55"</span> === <span class="number">55</span>; <span class="comment">//false 值相等，类型不相等</span></div><div class="line"><span class="keyword">var</span> result = <span class="number">55</span>  ===  <span class="number">55</span>; <span class="comment">//true</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h2 id="赋值元素符"><a href="#赋值元素符" class="headerlink" title="赋值元素符"></a>赋值元素符</h2><blockquote>
+<p>=   +=   -=   *=   /=   %=<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">0</span>;</div><div class="line">num += <span class="number">5</span>;<span class="comment">//相当于  num = num + 5;</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> x = <span class="number">6</span>;</div><div class="line"><span class="keyword">var</span> y = <span class="number">3</span>;</div><div class="line"><span class="keyword">var</span> z =a *( x /= y ) * x;<span class="comment">//8</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h2><blockquote>
+<p>从高到低:</p>
+<ul>
+<li>():  优先级最高</li>
+<li>一元运算符:  ++ – !</li>
+<li>算数运算符: 先 * / % , 后 + -</li>
+<li>关系运算符: &gt; &gt;= &lt; &lt;=</li>
+<li>相等运算符: == != === !==</li>
+<li>逻辑运算符: 先 &amp;&amp; , 后 ||</li>
+<li>赋值运算: = += -= *= /= %=</li>
+</ul>
+</blockquote>
+<h2 id="操作符案例"><a href="#操作符案例" class="headerlink" title="操作符案例:"></a>操作符案例:</h2><ul>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">((<span class="number">4</span> &gt;= <span class="number">6</span>) || (<span class="string">"人"</span> != <span class="string">"阿凡达"</span>)) &amp;&amp; !(((<span class="number">12</span> * <span class="number">2</span>) == <span class="number">144</span>) &amp;&amp; <span class="literal">true</span>) </div><div class="line">(<span class="literal">false</span> || <span class="literal">true</span> ) &amp;&amp; !((<span class="number">48</span> == <span class="number">144</span> ) &amp;&amp; <span class="literal">true</span>)</div><div class="line"><span class="literal">true</span> &amp;&amp; !(<span class="literal">false</span> &amp;&amp; <span class="literal">true</span>)</div><div class="line"><span class="literal">true</span> &amp;&amp; !<span class="literal">false</span></div><div class="line"><span class="literal">true</span></div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</div><div class="line"><span class="keyword">if</span>(<span class="number">5</span> == num / <span class="number">2</span> &amp;&amp; (<span class="number">2</span> + <span class="number">2</span> * num).toString() === <span class="string">"22"</span>) &#123;</div><div class="line">   <span class="built_in">console</span>.log(<span class="literal">true</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">( <span class="number">5</span> == <span class="number">10</span> / <span class="number">2</span> &amp;&amp; ( <span class="number">2</span> + <span class="number">2</span> * <span class="number">10</span>).toString() === <span class="string">'22'</span>)</div><div class="line"><span class="number">5</span> == <span class="number">5</span> &amp;&amp; <span class="string">"22"</span> === <span class="string">'22'</span></div><div class="line"><span class="literal">true</span></div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> aa  =   <span class="number">0</span>&amp;&amp;<span class="number">1</span>;</div><div class="line">alert(aa) <span class="comment">//0</span></div><div class="line"><span class="keyword">var</span> bb =  <span class="number">1</span>&amp;&amp;<span class="number">0</span>;</div><div class="line">alert(bb); <span class="comment">//0</span></div><div class="line"><span class="keyword">var</span> cc =  <span class="number">1</span>&amp;&amp;<span class="number">10</span>;</div><div class="line">alert(cc);<span class="comment">//10</span></div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="number">0</span>||<span class="number">1</span>);<span class="comment">//1</span></div><div class="line"><span class="built_in">console</span>.log(<span class="number">1</span>||<span class="number">0</span>);<span class="comment">//1</span></div><div class="line"><span class="built_in">console</span>.log(<span class="number">1</span>||<span class="number">5</span>);<span class="comment">//1</span></div><div class="line"><span class="built_in">console</span>.log(<span class="number">5</span>||<span class="number">1</span>);<span class="comment">//5</span></div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span> &amp;&amp; <span class="number">2</span> &amp;&amp; <span class="number">3</span>;</div><div class="line"><span class="built_in">console</span>.log(a);<span class="comment">//3</span></div><div class="line"><span class="keyword">var</span> b = <span class="number">0</span> &amp;&amp; <span class="number">1</span> &amp;&amp; <span class="number">2</span>;</div><div class="line"><span class="built_in">console</span>.log(b);<span class="comment">//0</span></div><div class="line"><span class="keyword">var</span> c = <span class="number">1</span> &amp;&amp; <span class="number">0</span>  &amp;&amp; <span class="number">2</span>;</div><div class="line"><span class="built_in">console</span>.log(c);<span class="comment">//0</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>两个console.log连在一起,逗号分开,会分成两行打印</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">0</span> || <span class="number">1</span> || <span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">1</span> || <span class="number">0</span> || <span class="number">3</span>;</div><div class="line"><span class="built_in">console</span>.log(a),<span class="built_in">console</span>.log(b);<span class="comment">//1 /n 1</span></div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">3</span> &amp;&amp; <span class="number">0</span> || <span class="number">2</span>; <span class="comment">//2</span></div><div class="line"><span class="keyword">var</span> b = <span class="number">3</span> || <span class="number">0</span> &amp;&amp; <span class="number">2</span>; <span class="comment">//3</span></div><div class="line"><span class="keyword">var</span> c = <span class="number">0</span> || <span class="number">2</span> &amp;&amp; <span class="number">3</span>; <span class="comment">//3</span></div><div class="line">alert(a),alert(b),alert(c);</div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">var</span> a = <span class="number">1</span>+<span class="number">1</span>&amp;&amp;<span class="number">3</span>; <span class="comment">//3</span></div><div class="line"> <span class="keyword">var</span> b = <span class="number">0</span> &amp;&amp; <span class="number">1</span>+<span class="number">1</span>; <span class="comment">//0</span></div><div class="line"> <span class="keyword">var</span> c = <span class="number">1</span> ||  <span class="number">2</span> &amp;&amp; <span class="number">3</span><span class="number">-1</span>; <span class="comment">//1</span></div><div class="line">alert(a);alert(b);alert(c);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
