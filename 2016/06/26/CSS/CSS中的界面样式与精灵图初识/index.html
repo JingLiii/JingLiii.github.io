@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS中的界面样式与精灵图初识 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="CSS用户界面样式cursor 鼠标样式
+default: 小白
+pointer: 小手
+move: 移动
+text: 文本
+尽量不要使用hand,因为火狐并不支持.轮廓
+绘制于元素周围的一条线,位于边框的外围,起到突出元素的效果
+
+
+outline: outline-color||outline-style||outline-width
+使用 czoutline: 0 直接去除边框.防止文本拖拽">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS中的界面样式与精灵图初识 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/06/26/CSS/CSS中的界面样式与精灵图初识/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="CSS用户界面样式cursor 鼠标样式
+default: 小白
+pointer: 小手
+move: 移动
+text: 文本
+尽量不要使用hand,因为火狐并不支持.轮廓
+绘制于元素周围的一条线,位于边框的外围,起到突出元素的效果
+
+
+outline: outline-color||outline-style||outline-width
+使用 czoutline: 0 直接去除边框.防止文本拖拽">
+<meta property="og:updated_time" content="2017-03-25T16:35:37.364Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS中的界面样式与精灵图初识 | 张润昊">
+<meta name="twitter:description" content="CSS用户界面样式cursor 鼠标样式
+default: 小白
+pointer: 小手
+move: 移动
+text: 文本
+尽量不要使用hand,因为火狐并不支持.轮廓
+绘制于元素周围的一条线,位于边框的外围,起到突出元素的效果
+
+
+outline: outline-color||outline-style||outline-width
+使用 czoutline: 0 直接去除边框.防止文本拖拽">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS中的界面样式与精灵图初识</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-06-26" class="post-meta__date date">2016-06-26</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="CSS用户界面样式"><a href="#CSS用户界面样式" class="headerlink" title="CSS用户界面样式"></a>CSS用户界面样式</h2><h3 id="cursor-鼠标样式"><a href="#cursor-鼠标样式" class="headerlink" title="cursor 鼠标样式"></a>cursor 鼠标样式</h3><ul>
+<li>default: 小白</li>
+<li>pointer: 小手</li>
+<li>move: 移动</li>
+<li>text: 文本</li>
+<li><strong>尽量不要使用hand,因为火狐并不支持.</strong><h3 id="轮廓"><a href="#轮廓" class="headerlink" title="轮廓"></a>轮廓</h3><blockquote>
+<p>绘制于元素周围的一条线,位于边框的外围,起到突出元素的效果</p>
+</blockquote>
+</li>
+<li>outline: outline-color||outline-style||outline-width</li>
+<li>使用 cz<strong>outline: 0</strong> 直接去除边框.<h3 id="防止文本拖拽"><a href="#防止文本拖拽" class="headerlink" title="防止文本拖拽"></a>防止文本拖拽</h3><blockquote>
+<p>resize: none这个单词可以防止火狐,谷歌浏览器拖拽文本框</p>
+<h2 id="vertical-algin-垂直对齐"><a href="#vertical-algin-垂直对齐" class="headerlink" title="vertical-algin: 垂直对齐"></a>vertical-algin: 垂直对齐</h2><p><strong>不影响块级元素中的内容对齐,只针对行内元素,或者行内块元素,特别是寒内块元素,用来控制图片和表单</strong></p>
+<h3 id="图片和文字对齐"><a href="#图片和文字对齐" class="headerlink" title="图片和文字对齐"></a>图片和文字对齐</h3></blockquote>
+</li>
+<li>默认的是文字和图片的基线对齐</li>
+<li>vertical: baseline 基线对齐(默认)</li>
+<li>vertical: middle 文字与图片的中间对齐</li>
+<li>vartical: top 文字与图片的顶部对齐<h3 id="去除图片底侧空白缝隙"><a href="#去除图片底侧空白缝隙" class="headerlink" title="去除图片底侧空白缝隙"></a>去除图片底侧空白缝隙</h3><blockquote>
+<p>因为图片的底部默认对齐父级元素的基线</p>
+</blockquote>
+</li>
+<li>解决方法<ul>
+<li>img vartical: middle|top  让图片不和基线对齐</li>
+<li>img 添加display: block 图片转化为块级元素即可解决这个问题<h2 id="精灵图片技术"><a href="#精灵图片技术" class="headerlink" title="精灵图片技术"></a>精灵图片技术</h2><blockquote>
+<p>很多的小图片放到一张背景图中,通过调整背景图片的位置,来达到我们想要展现的效果.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

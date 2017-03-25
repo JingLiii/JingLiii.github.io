@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS样式的初步认识 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="CSS介绍与规则
+CSS: Cascading Style Sheets 层叠样式表
+规则:
+
+属性与属性值之间以”键值对”的形式出现.
+属性是对指定的对象设置的样式属性字体样式属性font-size: 子号大小font-family: 字体
+指定多个字体时,可以使用逗号进行隔开,浏览器依次寻找,找到第一个合适的字体为准.
+网页中普遍使用14px
+中文字体,字体中带有空格,#,$符号时,使用引号括">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS样式的初步认识 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/06/12/CSS/CSS样式的初步认识/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="CSS介绍与规则
+CSS: Cascading Style Sheets 层叠样式表
+规则:
+
+属性与属性值之间以”键值对”的形式出现.
+属性是对指定的对象设置的样式属性字体样式属性font-size: 子号大小font-family: 字体
+指定多个字体时,可以使用逗号进行隔开,浏览器依次寻找,找到第一个合适的字体为准.
+网页中普遍使用14px
+中文字体,字体中带有空格,#,$符号时,使用引号括">
+<meta property="og:image" content="http://yoursite.com/./img/css01-rule.png">
+<meta property="og:image" content="http://yoursite.com/./img/css01-fontfamily.png">
+<meta property="og:updated_time" content="2017-03-25T16:39:18.680Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS样式的初步认识 | 张润昊">
+<meta name="twitter:description" content="CSS介绍与规则
+CSS: Cascading Style Sheets 层叠样式表
+规则:
+
+属性与属性值之间以”键值对”的形式出现.
+属性是对指定的对象设置的样式属性字体样式属性font-size: 子号大小font-family: 字体
+指定多个字体时,可以使用逗号进行隔开,浏览器依次寻找,找到第一个合适的字体为准.
+网页中普遍使用14px
+中文字体,字体中带有空格,#,$符号时,使用引号括">
+<meta name="twitter:image" content="http://yoursite.com/./img/css01-rule.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS样式的初步认识</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-06-12" class="post-meta__date date">2016-06-12</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="CSS介绍与规则"><a href="#CSS介绍与规则" class="headerlink" title="CSS介绍与规则"></a>CSS介绍与规则</h2><blockquote>
+<p>CSS: Cascading Style Sheets 层叠样式表</p>
+<h3 id="规则"><a href="#规则" class="headerlink" title="规则:"></a>规则:</h3><p><img src="./img/css01-rule.png" alt=""></p>
+<ul>
+<li>属性与属性值之间以”键值对”的形式出现.</li>
+<li>属性是对指定的对象设置的样式属性<h2 id="字体样式属性"><a href="#字体样式属性" class="headerlink" title="字体样式属性"></a>字体样式属性</h2><h3 id="font-size-子号大小"><a href="#font-size-子号大小" class="headerlink" title="font-size: 子号大小"></a>font-size: 子号大小</h3><h3 id="font-family-字体"><a href="#font-family-字体" class="headerlink" title="font-family: 字体"></a>font-family: 字体</h3></li>
+<li>指定多个字体时,可以使用逗号进行隔开,浏览器依次寻找,找到第一个合适的字体为准.</li>
+<li>网页中普遍使用14px</li>
+<li>中文字体,字体中带有空格,#,$符号时,使用引号括起来.<br><img src="./img/css01-fontfamily.png" alt=""><h3 id="font-Wight-字体粗细"><a href="#font-Wight-字体粗细" class="headerlink" title="font-Wight: 字体粗细"></a>font-Wight: 字体粗细</h3></li>
+<li>属性值包括: normal,bold,bolder,lighter,100-900</li>
+<li>400-normal,700-bold,900-bolder<h3 id="font-style-字体风格"><a href="#font-style-字体风格" class="headerlink" title="font-style: 字体风格"></a>font-style: 字体风格</h3></li>
+<li>normal: 默认没有风格</li>
+<li>italic: 显示斜体的字体样式</li>
+<li>obique: 倾斜字体.<h3 id="字体的综合设置"><a href="#字体的综合设置" class="headerlink" title="字体的综合设置"></a>字体的综合设置</h3>{font: font-style  font-weight  font-size/line-height  font-family;}</li>
+<li>各个属性之间的位置不能发生调换.<h2 id="CSS注释"><a href="#CSS注释" class="headerlink" title="CSS注释"></a>CSS注释</h2>/<em>  需要注释的内容  </em>/ <h2 id="CSS外观属性"><a href="#CSS外观属性" class="headerlink" title="CSS外观属性"></a>CSS外观属性</h2><h3 id="color-文本颜色"><a href="#color-文本颜色" class="headerlink" title="color: 文本颜色"></a>color: 文本颜色</h3></li>
+<li>三种定义的方式:文字定义,十六进制,RGBA.<h3 id="line-height-行高"><a href="#line-height-行高" class="headerlink" title="line-height: 行高"></a>line-height: 行高</h3></li>
+<li>行于行之间的高度,当行高等于某元素的高度时,其中的元素居中<h3 id="text-align-水平对齐方式"><a href="#text-align-水平对齐方式" class="headerlink" title="text-align: 水平对齐方式"></a>text-align: 水平对齐方式</h3></li>
+<li>left,right,center<h3 id="text-indent-首行缩进"><a href="#text-indent-首行缩进" class="headerlink" title="text-indent: 首行缩进"></a>text-indent: 首行缩进</h3><h2 id="标签的语义化"><a href="#标签的语义化" class="headerlink" title="标签的语义化"></a>标签的语义化</h2>合适的地方使用合适的标签.</li>
+</ul>
+</blockquote>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

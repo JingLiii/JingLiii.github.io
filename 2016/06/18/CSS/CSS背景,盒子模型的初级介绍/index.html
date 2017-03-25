@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS背景,盒子模型的初级介绍 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="背景
+背景颜色,背景图片,以及进行背景图片的设置
+
+background-image
+none: 无背景图
+url: 指定背景图的地址background-repeat
+repeat: 平铺 默认值
+no-repeat: 不平铺
+repeat-x: 沿X轴方向进行平铺
+repeat-y: 沿Y轴方向进行平铺background-position
+length length,如果只是指定了一个值,则">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS背景,盒子模型的初级介绍 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/06/18/CSS/CSS背景,盒子模型的初级介绍/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="背景
+背景颜色,背景图片,以及进行背景图片的设置
+
+background-image
+none: 无背景图
+url: 指定背景图的地址background-repeat
+repeat: 平铺 默认值
+no-repeat: 不平铺
+repeat-x: 沿X轴方向进行平铺
+repeat-y: 沿Y轴方向进行平铺background-position
+length length,如果只是指定了一个值,则">
+<meta property="og:image" content="http://yoursite.com/./img/02css03-background.png">
+<meta property="og:image" content="http://yoursite.com/./img/02css03-margin.png">
+<meta property="og:image" content="http://yoursite.com/./img/02css03-margin02.png">
+<meta property="og:updated_time" content="2017-03-25T16:39:52.092Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS背景,盒子模型的初级介绍 | 张润昊">
+<meta name="twitter:description" content="背景
+背景颜色,背景图片,以及进行背景图片的设置
+
+background-image
+none: 无背景图
+url: 指定背景图的地址background-repeat
+repeat: 平铺 默认值
+no-repeat: 不平铺
+repeat-x: 沿X轴方向进行平铺
+repeat-y: 沿Y轴方向进行平铺background-position
+length length,如果只是指定了一个值,则">
+<meta name="twitter:image" content="http://yoursite.com/./img/02css03-background.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS背景,盒子模型的初级介绍</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-06-18" class="post-meta__date date">2016-06-18</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><blockquote>
+<p>背景颜色,背景图片,以及进行背景图片的设置</p>
+<ul>
+<li><img src="./img/02css03-background.png" alt=""><h3 id="background-image"><a href="#background-image" class="headerlink" title="background-image"></a>background-image</h3></li>
+<li>none: 无背景图</li>
+<li>url: 指定背景图的地址<h3 id="background-repeat"><a href="#background-repeat" class="headerlink" title="background-repeat"></a>background-repeat</h3></li>
+<li>repeat: 平铺 默认值</li>
+<li>no-repeat: 不平铺</li>
+<li>repeat-x: 沿X轴方向进行平铺</li>
+<li>repeat-y: 沿Y轴方向进行平铺<h3 id="background-position"><a href="#background-position" class="headerlink" title="background-position"></a>background-position</h3></li>
+<li>length length,如果只是指定了一个值,则这个值表示的横坐标,第二个值表示的纵坐标</li>
+<li>position position,top bottom center;left center right;都是表示位置,可以不分先后,一般情况下,将横坐标left写在第一个位置.<h3 id="background-attachment"><a href="#background-attachment" class="headerlink" title="background-attachment"></a>background-attachment</h3>背景附着</li>
+<li>scroll: 背景图像随对象内容进行滚动(默认)</li>
+<li>fixed: 背景图像固定<h3 id="背景简写"><a href="#背景简写" class="headerlink" title="背景简写"></a>背景简写</h3>没有强制性的要求和规定<h2 id="盒子模型-重点掌握"><a href="#盒子模型-重点掌握" class="headerlink" title="盒子模型 重点掌握"></a>盒子模型 <strong>重点掌握</strong></h2>所有的文档元素(标签)都会生成一个矩形框,我们称为元素框,它描述了一个文档元素在网页布局中所占的位置大小.<h3 id="盒子边框"><a href="#盒子边框" class="headerlink" title="盒子边框"></a>盒子边框</h3></li>
+<li>border: 宽度||样式||颜色</li>
+<li>border-style: 上 右 下 左 : none(无,默认,也用于边框清零)</li>
+<li>border-width: 顺序相同: 宽度为像素值</li>
+<li>border-color: 边框颜色,可以采用十六进制的颜色</li>
+<li>综合设置的话,就是直接一个border: 四边的宽度,四边的样式,四边的颜色<h3 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h3>padding: 用于设置边框和内容之间的距离</li>
+<li>分开设置: padding-top, padding-right, padding-bottm, padding-left.</li>
+<li>数值的个数不同,代表的含义不同<ul>
+<li>1个值,代表各个方向的内边距</li>
+<li>2个值,代表上下内边距,左右内边距</li>
+<li>3个值,代表上内边距,左右内边距,下内边距</li>
+<li>4个值,代表上,右,下,左<h3 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h3>margin: 元素之间的空白,通常情况下,这个空白不能再放置任何内容</li>
+</ul>
+</li>
+<li>顺序与内边距相同</li>
+<li>水平居中<ul>
+<li>块级元素</li>
+<li>指定宽度</li>
+<li>左右的外边距设置为auto<h3 id="清除内外边距"><a href="#清除内外边距" class="headerlink" title="清除内外边距"></a>清除内外边距</h3>通常情况下,使用通配符进行清除所有元素默认的内外边距,以免影响网页布局<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">* &#123;</div><div class="line"><span class="attribute">padding</span>: <span class="number">0</span>; </div><div class="line"><span class="attribute">margin</span>: <span class="number">0</span>; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><strong>行内元素只有左右内外边距,没有上下内外边距</strong></p>
+<h3 id="外边距合并"><a href="#外边距合并" class="headerlink" title="外边距合并"></a>外边距合并</h3><ul>
+<li>相邻块级元素,垂直外边距合并<blockquote>
+<p><img src="./img/02css03-margin.png" alt=""></p>
+</blockquote>
+</li>
+<li>嵌套块级元素,垂直外边距河边<blockquote>
+<p><img src="./img/02css03-margin02.png" alt=""></p>
+<h2 id="盒子布局的稳定性"><a href="#盒子布局的稳定性" class="headerlink" title="盒子布局的稳定性"></a>盒子布局的稳定性</h2><p>宽度(width)&gt;内边距(padding)&gt;外边距(margin)</p>
+</blockquote>
+</li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
