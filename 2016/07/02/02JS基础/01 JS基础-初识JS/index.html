@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS基础-初识JS | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="JavaScript 的作用js的最初目的
+判断客户端的输入现在的意义
+网页特效(PC端的网页效果)
+移动端(移动WEB和APP)
+异步与服务器进行交互
+服务器端开发(node.js)浏览器是如何运行的?关于javascript语言
+用的最多的脚本语言
+脚本语言:不需要编译,直接运行,边解析边运行
+
+
+客户端的脚本语言JavaScript组成
+
+ECMAScript:JavaScript的语法规范">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS基础-初识JS | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/07/02/02JS基础/01 JS基础-初识JS/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="JavaScript 的作用js的最初目的
+判断客户端的输入现在的意义
+网页特效(PC端的网页效果)
+移动端(移动WEB和APP)
+异步与服务器进行交互
+服务器端开发(node.js)浏览器是如何运行的?关于javascript语言
+用的最多的脚本语言
+脚本语言:不需要编译,直接运行,边解析边运行
+
+
+客户端的脚本语言JavaScript组成
+
+ECMAScript:JavaScript的语法规范">
+<meta property="og:image" content="http://onh27ty1g.bkt.clouddn.com/JS%E5%9F%BA%E7%A1%80/01.PNG">
+<meta property="og:updated_time" content="2017-03-27T12:44:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS基础-初识JS | 张润昊">
+<meta name="twitter:description" content="JavaScript 的作用js的最初目的
+判断客户端的输入现在的意义
+网页特效(PC端的网页效果)
+移动端(移动WEB和APP)
+异步与服务器进行交互
+服务器端开发(node.js)浏览器是如何运行的?关于javascript语言
+用的最多的脚本语言
+脚本语言:不需要编译,直接运行,边解析边运行
+
+
+客户端的脚本语言JavaScript组成
+
+ECMAScript:JavaScript的语法规范">
+<meta name="twitter:image" content="http://onh27ty1g.bkt.clouddn.com/JS%E5%9F%BA%E7%A1%80/01.PNG">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS基础-初识JS</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-07-02" class="post-meta__date date">2016-07-02</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="JavaScript-的作用"><a href="#JavaScript-的作用" class="headerlink" title="JavaScript 的作用"></a>JavaScript 的作用</h2><h3 id="js的最初目的"><a href="#js的最初目的" class="headerlink" title="js的最初目的"></a>js的最初目的</h3><ul>
+<li>判断客户端的输入<h3 id="现在的意义"><a href="#现在的意义" class="headerlink" title="现在的意义"></a>现在的意义</h3></li>
+<li>网页特效(PC端的网页效果)</li>
+<li>移动端(移动WEB和APP)</li>
+<li>异步与服务器进行交互</li>
+<li>服务器端开发(node.js)<h3 id="浏览器是如何运行的"><a href="#浏览器是如何运行的" class="headerlink" title="浏览器是如何运行的?"></a><strong>浏览器是如何运行的?</strong></h3><h3 id="关于javascript语言"><a href="#关于javascript语言" class="headerlink" title="关于javascript语言"></a>关于javascript语言</h3></li>
+<li>用的最多的脚本语言<ul>
+<li>脚本语言:不需要编译,直接运行,边解析边运行</li>
+</ul>
+</li>
+<li>客户端的脚本语言<h3 id="JavaScript组成"><a href="#JavaScript组成" class="headerlink" title="JavaScript组成"></a>JavaScript组成</h3></li>
+<li><img src="http://onh27ty1g.bkt.clouddn.com/JS%E5%9F%BA%E7%A1%80/01.PNG" alt=""></li>
+<li>ECMAScript:JavaScript的语法规范</li>
+<li>DOM: JavaScript操作页面上的元素的API</li>
+<li>BOM: JavaScript操作浏览器部分功能API<h3 id="输出语句"><a href="#输出语句" class="headerlink" title="输出语句"></a>输出语句</h3></li>
+<li>console.log(“内容”): 在控制台打印输出内容</li>
+<li>document.write(“内容”): 在页面书写内容</li>
+<li>alert(“内容”): 弹出显示内容<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3></li>
+<li>单行注释: //</li>
+<li>多行注释: /<em>    </em>/</li>
+<li>注释的作用:<ul>
+<li>一般用于解释某些复杂代码的逻辑,方便后期的维护与开发</li>
+<li>对整个代码块进行分割<br>*　一般用于：模块，函数，复杂逻辑注解，文件注解，维护记录<h3 id="书写位置"><a href="#书写位置" class="headerlink" title="书写位置"></a>书写位置</h3></li>
+</ul>
+</li>
+<li>在HTML中直接书写,一般写在上面</li>
+<li>引入外部文件: <code>&lt;script src=&quot;地址&quot;&gt;&lt;/script&gt;</code></li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

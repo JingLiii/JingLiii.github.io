@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS基础-函数进阶 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="作用域 与 变量提升变量的作用域
+根据变量的作用范围不同,可以对变量进行分类
+
+全局变量
+定义在script 或者 不属于某个函数的变量
+在任何位置中,不带var的变量也是全局变量
+
+
+局部变量
+在函数内部带有var定义的变量
+
+
+作用域链
+函数内部可以访问到该函数所属的外部作用域的变量
+局部变量退出作用域之后就会销毁, 全局变量关闭网页或浏览器才会销毁预解析 与 变量提升
+
+
+预解析
+在执行代码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS基础-函数进阶 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/08/09/02JS基础/12 JS基础-函数进阶/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="作用域 与 变量提升变量的作用域
+根据变量的作用范围不同,可以对变量进行分类
+
+全局变量
+定义在script 或者 不属于某个函数的变量
+在任何位置中,不带var的变量也是全局变量
+
+
+局部变量
+在函数内部带有var定义的变量
+
+
+作用域链
+函数内部可以访问到该函数所属的外部作用域的变量
+局部变量退出作用域之后就会销毁, 全局变量关闭网页或浏览器才会销毁预解析 与 变量提升
+
+
+预解析
+在执行代码">
+<meta property="og:updated_time" content="2017-03-27T12:47:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS基础-函数进阶 | 张润昊">
+<meta name="twitter:description" content="作用域 与 变量提升变量的作用域
+根据变量的作用范围不同,可以对变量进行分类
+
+全局变量
+定义在script 或者 不属于某个函数的变量
+在任何位置中,不带var的变量也是全局变量
+
+
+局部变量
+在函数内部带有var定义的变量
+
+
+作用域链
+函数内部可以访问到该函数所属的外部作用域的变量
+局部变量退出作用域之后就会销毁, 全局变量关闭网页或浏览器才会销毁预解析 与 变量提升
+
+
+预解析
+在执行代码">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS基础-函数进阶</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-08-09" class="post-meta__date date">2016-08-09</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="作用域-与-变量提升"><a href="#作用域-与-变量提升" class="headerlink" title="作用域 与 变量提升"></a>作用域 与 变量提升</h2><h3 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h3><blockquote>
+<p>根据变量的作用范围不同,可以对变量进行分类</p>
+<ul>
+<li>全局变量<ul>
+<li>定义在script 或者 不属于某个函数的变量</li>
+<li>在任何位置中,不带var的变量也是全局变量</li>
+</ul>
+</li>
+<li>局部变量<ul>
+<li>在函数内部带有var定义的变量</li>
+</ul>
+</li>
+<li>作用域链<ul>
+<li>函数内部可以访问到该函数所属的外部作用域的变量</li>
+<li>局部变量退出作用域之后就会销毁, 全局变量关闭网页或浏览器才会销毁<h3 id="预解析-与-变量提升"><a href="#预解析-与-变量提升" class="headerlink" title="预解析 与 变量提升"></a>预解析 与 变量提升</h3></li>
+</ul>
+</li>
+<li>预解析<ul>
+<li>在执行代码前,先检查语法错误,再进行变量提升</li>
+</ul>
+</li>
+<li>变量提升 ( 函数范围内同样有效 )<ul>
+<li>预解析时,js把所有的 变量名 和 函数 全部提升到js的最顶端</li>
+</ul>
+<ol>
+<li>只提升变量名, 不提升变量值. 函数整体进行提升</li>
+<li>提升时 先提升变量,再提升函数<br><strong>使用变量,在变量定义之前,容易出现undefined</strong></li>
+</ol>
+</li>
+<li><strong>就近原则: 局部变量和全局变量一样时,使用局部变量</strong></li>
+</ul>
+</blockquote>
+<ul>
+<li><p>形参也是一种局部变量.(局部变量,函数执行完后,立即收回)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj1 = <span class="number">123</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(obj1); <span class="comment">//123</span></div><div class="line">    <span class="keyword">var</span> obj2 = <span class="number">456</span>;</div><div class="line">&#125;</div><div class="line">fn();</div><div class="line"><span class="built_in">console</span>.log(obj2); <span class="comment">//报错: obj2 未定义</span></div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> color = <span class="string">"red"</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getColor</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> anotherColor = <span class="string">"blue"</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">swapColor</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> tmpColor = color;</div><div class="line">        color = anotherColor;</div><div class="line">        anotherColor = tmpColor;</div><div class="line">    &#125;</div><div class="line">    swapColor();</div><div class="line">&#125;</div><div class="line"></div><div class="line">getColor();</div><div class="line"><span class="built_in">console</span>.log(color); <span class="comment">//blue</span></div></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</div><div class="line">fun();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(num);<span class="comment">//undefined</span></div><div class="line">    <span class="keyword">var</span> num = <span class="number">20</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">18</span>;</div><div class="line">f1();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> b = <span class="number">9</span>;</div><div class="line">    <span class="built_in">console</span>.log(a); <span class="comment">//undefined</span></div><div class="line">    <span class="built_in">console</span>.log(b); <span class="comment">//9</span></div><div class="line">    <span class="keyword">var</span> a = <span class="string">'123'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">f1();</div><div class="line"><span class="built_in">console</span>.log(c);</div><div class="line"><span class="built_in">console</span>.log(b);</div><div class="line"><span class="built_in">console</span>.log(a);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> a = b = c = <span class="number">9</span>;</div><div class="line">    <span class="comment">//var a = 9;</span></div><div class="line">    <span class="comment">//b = 9;</span></div><div class="line">    <span class="comment">//c = 9; </span></div><div class="line">    <span class="built_in">console</span>.log(a);</div><div class="line">    <span class="built_in">console</span>.log(b);</div><div class="line">    <span class="built_in">console</span>.log(c);</div><div class="line">&#125;</div><div class="line"><span class="comment">//结果: 连续5个9, 报错</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><blockquote>
+<p>不需要定义函数名的时候</p>
+<ol>
+<li>立即调用<ul>
+<li>函数名();<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//命名函数直接调用</span></div><div class="line"><span class="function"><span class="keyword">function</span>(<span class="params"></span>);</span></div><div class="line"></div><div class="line">//有函数名也可以直接调用</div><div class="line">(<span class="params">function fn(</span>)&#123;</div><div class="line"></div><div class="line">&#125;)();</div><div class="line"></div><div class="line"><span class="comment">//匿名函数直接调用,大部分时候是为了一个独立的作用域</span></div><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<ol>
+<li><p>事件绑定</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    alert(<span class="string">'ddd'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>定时器</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//多长时间执行一次这个匿名函数, 单位是毫秒 1秒 = 1000毫秒</span></div><div class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">&#125;,<span class="number">1000</span>)</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="高级函数"><a href="#高级函数" class="headerlink" title="高级函数"></a>高级函数</h2><h3 id="函数的数据类型"><a href="#函数的数据类型" class="headerlink" title="函数的数据类型"></a>函数的数据类型</h3><blockquote>
+<p>函数是复杂数据类型,属于obejct的一种<br>较为特殊,打印时单独显示</p>
+<ul>
+<li>任何数据类型 都是字符串定义的.<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//简单数据类型：string,number,boolean,undefined;</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"简单数据类型---------"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="string">"aaa"</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="number">111</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="literal">true</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="literal">undefined</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="string">"简单数据类型书写的类型---------"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(<span class="string">"aaa"</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(<span class="number">111</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(<span class="literal">true</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(<span class="literal">undefined</span>));</div><div class="line"></div><div class="line"><span class="comment">//复杂数据类型：object(Array,Date,RegEpx...),function.......</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"复杂数据类型---------"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="regexp">/^abc$/</span>));<span class="comment">//正则</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="keyword">new</span> <span class="built_in">Date</span>()));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(<span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"alert(1)"</span>)));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(aaa));</div><div class="line"><span class="built_in">console</span>.log(<span class="string">"复杂数据类型书写的类型---------"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(<span class="regexp">/^abc$/</span>));<span class="comment">//正则</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(<span class="keyword">new</span> <span class="built_in">Date</span>()));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(<span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"alert(1)"</span>)));</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="keyword">typeof</span>(aaa));</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="函数的三个高级操作"><a href="#函数的三个高级操作" class="headerlink" title="函数的三个高级操作"></a>函数的三个高级操作</h3><blockquote>
+<p>函数做参数(回调函数).<br>函数自调用(递归).<br>函数做返回值(闭包).</p>
+</blockquote>
+<ol>
+<li><p>回调函数</p>
+<ul>
+<li>函数作为参数</li>
+<li>参数传递时,传递的是函数名或者是函数体,若是直接放入执行函数,那么放入的就是返回值</li>
+<li>一旦参数名后加( ),就代表,这个参数一定是一个函数.</li>
+<li>那么这个函数就成为回调函数</li>
+<li>回调函数,就是我们定义一种规则,而具体的执行,和传入和参数,并不是我们控制的<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fn = <span class="function"><span class="keyword">function</span>(<span class="params">a</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(a);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">demo</span>)</span>&#123;</div><div class="line">    demo(<span class="number">3</span>);</div><div class="line">&#125;</div><div class="line">foo(fn);<span class="comment">//3</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>递归</p>
+<ul>
+<li>函数自己调用自己</li>
+<li>递归必须有跳出条件,不然就是死循环,没有了意义</li>
+</ul>
+</li>
+<li>闭包<ul>
+<li>函数的返回值,这是一个函数</li>
+<li>形成函数的嵌套</li>
+</ul>
+</li>
+</ol>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

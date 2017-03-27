@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS基础-基本包装类型 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="普通变量没有属性和方法
+基本概念
+一种特殊的引用类型
+
+包括String,Number,Boolean,后面两个基本不用
+基本类型没有方法,为了方便对其进行操作.
+每次基本数据类型调用方法,都会将其转为基本包装类型,操作完之后销毁临时对象123456var s1 = &quot;zhangsan&quot;;var s2 = s1.substring(5);var s1 = new String(&quot;zhangsan&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS基础-基本包装类型 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/08/15/02JS基础/15 JS基础-基本包装类型/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="普通变量没有属性和方法
+基本概念
+一种特殊的引用类型
+
+包括String,Number,Boolean,后面两个基本不用
+基本类型没有方法,为了方便对其进行操作.
+每次基本数据类型调用方法,都会将其转为基本包装类型,操作完之后销毁临时对象123456var s1 = &quot;zhangsan&quot;;var s2 = s1.substring(5);var s1 = new String(&quot;zhangsan&quot;">
+<meta property="og:updated_time" content="2017-03-27T12:48:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS基础-基本包装类型 | 张润昊">
+<meta name="twitter:description" content="普通变量没有属性和方法
+基本概念
+一种特殊的引用类型
+
+包括String,Number,Boolean,后面两个基本不用
+基本类型没有方法,为了方便对其进行操作.
+每次基本数据类型调用方法,都会将其转为基本包装类型,操作完之后销毁临时对象123456var s1 = &quot;zhangsan&quot;;var s2 = s1.substring(5);var s1 = new String(&quot;zhangsan&quot;">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS基础-基本包装类型</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-08-15" class="post-meta__date date">2016-08-15</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p><strong>普通变量没有属性和方法</strong></p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><blockquote>
+<p>一种特殊的引用类型</p>
+<ul>
+<li>包括String,Number,Boolean,<strong>后面两个基本不用</strong></li>
+<li>基本类型没有方法,为了方便对其进行操作.</li>
+<li>每次基本数据类型调用方法,都会将其转为基本包装类型,操作完之后销毁临时对象<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> s1 = <span class="string">"zhangsan"</span>;</div><div class="line"><span class="keyword">var</span> s2 = s1.substring(<span class="number">5</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> s1 = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">"zhangsan"</span>);</div><div class="line"><span class="keyword">var</span> s2 = s1.substring(<span class="number">5</span>);</div><div class="line">s1 = <span class="literal">null</span>;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><blockquote>
+<p>基本包装类型String提供了很多方法让我们使用</p>
+<ul>
+<li>charAt(索引)<ul>
+<li>根据索引返回指定位置的字符串</li>
+<li>返回值为字符串<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcdefghigh'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.charAt(<span class="number">2</span>);</div><div class="line"><span class="built_in">console</span>.log(str1)<span class="comment">//c</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>charCodeAt(索引)</p>
+<ul>
+<li>根据索引返回指定位置ASCII码值</li>
+<li>返回值是数字<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcdefghigh'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.charCodeAt(<span class="number">2</span>);</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//99</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>cancat(字符串,字符串,…)</p>
+<ul>
+<li>拼接字符串</li>
+<li>返回值是一个新的字符串<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcd'</span>;</div><div class="line"><span class="keyword">var</span> str2 = <span class="string">'张'</span>;</div><div class="line"><span class="keyword">var</span> str3 = <span class="string">'li'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.concat(str2, str3);</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//abcd张li</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>slice(开始索引,结束索引)</p>
+<ul>
+<li>返回截取后的字符串</li>
+<li>包括开始索引位置的字符串</li>
+<li>不包括结束位置的字符串<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcd'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.slice(<span class="number">1</span>, <span class="number">3</span>);</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//bc</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>substring(开始索引,结束索引)</p>
+<ul>
+<li>返回截取后的字符串</li>
+<li>包括开始索引位置的字符串</li>
+<li>不包括结束位置的字符串</li>
+<li>若是没有结束索引,返回是从开始截取一直到最后的索引<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcd'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.substring(<span class="number">1</span>);</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//bc</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>substr(开始索引,长度)</p>
+<ul>
+<li>从开始位置开始截取,截取指定长度的字符串</li>
+<li>包括索引开始位置</li>
+<li>返回的是字符串<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcdefgh'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.substr(<span class="number">2</span>, <span class="number">3</span>);</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//cde</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>indexOf(要查找的字符串,开始的位置)</p>
+<ul>
+<li>从开始位置开始查找,要查找的字符串</li>
+<li>包括开始的位置</li>
+<li>如果找到了返回对应的索引</li>
+<li>没有找到返回 -1</li>
+<li>如果找到了一个就直接返回,后面不再进行查找<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcdefch'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.indexOf(<span class="string">'c'</span>, <span class="number">3</span>);</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//6</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>lastIndexOf(要查找的字符串,开始的索引)</p>
+<ul>
+<li>从后往前找,找到就返回</li>
+<li>包括开始的索引<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcdefch'</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.lastIndexOf(<span class="string">'c'</span>, <span class="number">8</span>);</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//6</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>trim()</p>
+<ul>
+<li>去除字符串前后的空白<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'  bcdefch   '</span>;</div><div class="line"><span class="keyword">var</span> str1 = str.trim();</div><div class="line"><span class="built_in">console</span>.log(str1) <span class="comment">//6</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>大小写转换</p>
+<ul>
+<li>to(Locale)UpperCase() //转换大写</li>
+<li>to(Locale)LowerCase() //转换小写</li>
+</ul>
+</li>
+<li><p>search(‘查找的字符串’)</p>
+<ul>
+<li>返回的是找到的索引值<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'abcdef'</span>;</div><div class="line"><span class="keyword">var</span> ret = str.search(<span class="string">'d'</span>)</div><div class="line"><span class="built_in">console</span>.log(ret) <span class="comment">//3</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>splice(需要截取的字符串)</p>
+<ul>
+<li>将需要截取的字符串进行删除</li>
+<li>截取后,进行分割后放入数组<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'acdbcdef'</span>;</div><div class="line"><span class="keyword">var</span> ret = str.split(<span class="string">'cd'</span>);</div><div class="line"><span class="built_in">console</span>.log(ret); <span class="comment">//["a", "b", "ef"]</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>案例01</p>
+<ul>
+<li>查找出字符串中所有的小杨</li>
+<li>使用’地主’,将小杨进行替换<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//查找字符串:方法一:</span></div><div class="line">        <span class="keyword">var</span> str = <span class="string">"小杨传说在传智播客有个讲师叫小杨,小杨很帅,很纯洁,小杨是智慧和勇敢的化身.第一次听人这么说我不相信,于是我怀着试试看的心情来到了传智播客,见到了传说中的小杨。哇塞,小杨岂止是帅,简直就是帅的无法用言语来形容小杨"</span>;</div><div class="line">        <span class="comment">//定义数组,将小杨出现的位置存放到数组中</span></div><div class="line">        <span class="keyword">var</span> arr = [];</div><div class="line">        <span class="comment">//定义查找的关键字</span></div><div class="line">        <span class="keyword">var</span> indexKey = <span class="string">'小'</span>;</div><div class="line">        <span class="comment">//指定的索引开始查找</span></div><div class="line">        <span class="keyword">var</span> index = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; str.length; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (str.indexOf(indexKey, index) &gt;= <span class="number">0</span>) &#123;</div><div class="line">                <span class="keyword">var</span> pos = str.indexOf(indexKey, index);</div><div class="line">                arr.push(pos);</div><div class="line">                index = pos + <span class="number">1</span>;</div><div class="line">            &#125;;</div><div class="line">        &#125;;</div><div class="line">        <span class="built_in">console</span>.log(arr);</div><div class="line"><span class="comment">//查找字符串: 方法二</span></div><div class="line">        <span class="keyword">while</span> (str.indexOf(<span class="string">'小杨'</span>, index) != <span class="number">-1</span>) &#123;</div><div class="line">            index = str.indexOf(<span class="string">'小杨'</span>, index);</div><div class="line">            <span class="built_in">console</span>.log(index);</div><div class="line">            index += indexKey.length;</div><div class="line">        &#125;</div><div class="line"><span class="comment">//替换字符串</span></div><div class="line">        <span class="keyword">while</span> (str.indexOf(<span class="string">'小杨'</span>) != <span class="number">-1</span>) &#123;</div><div class="line">            str = str.replace(<span class="string">'小杨'</span>, <span class="string">'地主'</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">console</span>.log(str);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>案例02</p>
+<ul>
+<li>统计字符串中各个字符出现的次数</li>
+<li>求出出现最多的那个次数<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'what aaare yosaau , noswaaang shaa lei ?'</span>;</div><div class="line"><span class="keyword">var</span> obj = &#123;&#125;;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; str.length; i++) &#123;</div><div class="line">    <span class="keyword">var</span> temp = str.charAt(i);</div><div class="line">    <span class="keyword">if</span> (obj[temp]) &#123;</div><div class="line">        ++obj[temp];</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        obj[temp] = <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(obj);</div><div class="line"><span class="keyword">var</span> maxCount = <span class="number">0</span>;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> obj) &#123;</div><div class="line">    <span class="keyword">if</span> (obj[k] &gt; maxCount) &#123;</div><div class="line">        maxCount = obj[k];</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(maxCount)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

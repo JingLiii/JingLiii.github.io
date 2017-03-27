@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS基础-Math与Date对象 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="Math对象
+内置对象,并不像Array,Date他们是构造函数
+属性
+Math.PI : 圆周率1console.log(Math.PI)//3.141592653589793
+
+
+
+方法
+Math.min():求最小值
+Math.max():求最大值
+12console.log(Math.max(1, 2, 5, 3, 4)) //5console.log(Math.min(1, 2, 5,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS基础-Math与Date对象 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/08/20/02JS基础/17 JS基础-Math与Date/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="Math对象
+内置对象,并不像Array,Date他们是构造函数
+属性
+Math.PI : 圆周率1console.log(Math.PI)//3.141592653589793
+
+
+
+方法
+Math.min():求最小值
+Math.max():求最大值
+12console.log(Math.max(1, 2, 5, 3, 4)) //5console.log(Math.min(1, 2, 5,">
+<meta property="og:updated_time" content="2017-03-27T12:50:25.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS基础-Math与Date对象 | 张润昊">
+<meta name="twitter:description" content="Math对象
+内置对象,并不像Array,Date他们是构造函数
+属性
+Math.PI : 圆周率1console.log(Math.PI)//3.141592653589793
+
+
+
+方法
+Math.min():求最小值
+Math.max():求最大值
+12console.log(Math.max(1, 2, 5, 3, 4)) //5console.log(Math.min(1, 2, 5,">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS基础-Math与Date对象</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-08-20" class="post-meta__date date">2016-08-20</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="Math对象"><a href="#Math对象" class="headerlink" title="Math对象"></a>Math对象</h2><blockquote>
+<p>内置对象,并不像Array,Date他们是构造函数</p>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><ul>
+<li>Math.PI : 圆周率<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.PI)<span class="comment">//3.141592653589793</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li>Math.min():求最小值</li>
+<li><p>Math.max():求最大值</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.max(<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">3</span>, <span class="number">4</span>)) <span class="comment">//5</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.min(<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">3</span>, <span class="number">4</span>)) <span class="comment">//1</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Math.ceil():向上取整</p>
+</li>
+<li>Math.floor():向下取整</li>
+<li><p>Math.round():四舍五入</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.ceil(<span class="number">5.1</span>)) <span class="comment">//6</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.floor(<span class="number">5.1</span>)) <span class="comment">//5</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.round(<span class="number">5.1</span>)) <span class="comment">//5</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Math.random():随机数 [0-1)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.random())</div><div class="line"><span class="comment">//因为随机数是从 0 - 1 的取不到 0 和 1 随机, * 10后 最大位取不到10, 又因为最高位 可能是0 所以取整后 可以是0</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random() * <span class="number">10</span>)) <span class="comment">//0-9</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random() * <span class="number">10</span> + <span class="number">2</span>)); <span class="comment">//2-11</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Math.abs(): 可对负数进行取反变成正数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.abs(<span class="number">-25</span>))<span class="comment">//25</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Math.pow(x, y) : 求x的y次方</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.pow(<span class="number">2</span>, <span class="number">3</span>)) <span class="comment">//8</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Math.sqrt() : 开平方</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Math</span>.sqrt(<span class="number">25</span>)) <span class="comment">//5</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Date对象"><a href="#Date对象" class="headerlink" title="Date对象"></a>Date对象</h2><h3 id="获取当前时间"><a href="#获取当前时间" class="headerlink" title="获取当前时间"></a>获取当前时间</h3><blockquote>
+<p>记录的是从1970年1月1日0点 到现在的毫秒数<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> date = <span class="built_in">Date</span>.now() <span class="comment">//H5新属性</span></div><div class="line"><span class="built_in">console</span>.log(date) <span class="comment">//1489148171586</span></div><div class="line"><span class="keyword">var</span> date = +<span class="keyword">new</span> <span class="built_in">Date</span>() <span class="comment">//IE 兼容写法</span></div><div class="line"><span class="built_in">console</span>.log(date) <span class="comment">//1489148171586</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="日期转换"><a href="#日期转换" class="headerlink" title="日期转换"></a>日期转换</h3><ul>
+<li><strong>var date = new Date(参数);</strong><blockquote>
+<p>创建时间对象</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li>参数可以是日期的每一部分 <code>2005，10，1</code></li>
+<li>字符串格式的日期 <code>2005-10-1</code></li>
+<li>表示时间日期的毫秒形式 <code>1128096000000</code><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">2017</span>, <span class="number">03</span>, <span class="number">11</span>)) <span class="comment">//Tue Apr 11 2017 00:00:00 GMT+0800 (中国标准时间)</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">2018</span> - <span class="number">03</span> - <span class="number">11</span>))</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="number">1128096000000</span>))</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>var date = Date.parse(‘2015-10-01’);<blockquote>
+<p>将参数中的日期转换为毫秒形式,<br>如果字符串不是正确的时间格式, 就会返回NaN</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> date = <span class="built_in">Date</span>.parse(<span class="string">'2015-10-01'</span>);</div><div class="line"><span class="built_in">console</span>.log(date)<span class="comment">//1443657600000</span></div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<h3 id="日期格式化方法"><a href="#日期格式化方法" class="headerlink" title="日期格式化方法"></a>日期格式化方法</h3><ul>
+<li>toString() :返回时间对象对应的毫秒,字符串形式</li>
+<li><p>valueOf(): 返回时间对象对应的毫秒数字,num格式,因此可以直接比较大小</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dt = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(dt.toLocaleDateString()); <span class="comment">//2017/3/10</span></div><div class="line"><span class="built_in">console</span>.log(dt.toDateString()); <span class="comment">//Fri Mar 10 2017</span></div><div class="line"><span class="built_in">console</span>.log(dt.toLocaleTimeString()); <span class="comment">//下午8:30:23</span></div><div class="line"><span class="built_in">console</span>.log(dt.toTimeString()); <span class="comment">//20:30:23 GMT+0800 (中国标准时间)</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>时间对象中包含的方法</p>
+<ul>
+<li>getTime()  返回毫秒数和valueOf()结果一样</li>
+<li>getMilliseconds() </li>
+<li>getSeconds()  返回0-59</li>
+<li>getMinutes()  返回0-59</li>
+<li>getHours()   返回0-23</li>
+<li>getDay()     返回星期几 0周日   6周6</li>
+<li>getDate()    返回当前月的第几天</li>
+<li>getMonth()   返回月份，从0开始</li>
+<li>getFullYear()   返回4位的年份  如 2016<h3 id="封装时间函数"><a href="#封装时间函数" class="headerlink" title="封装时间函数"></a>封装时间函数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getNowStringTime</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>;</div><div class="line">    <span class="keyword">var</span> year = date.getFullYear();</div><div class="line">    <span class="keyword">var</span> month = date.getMonth();</div><div class="line">    <span class="keyword">var</span> day = date.getDate();</div><div class="line">    <span class="keyword">var</span> hour = date.getHours();</div><div class="line">    <span class="keyword">var</span> minute = date.getMinutes();</div><div class="line">    <span class="keyword">var</span> second = date.getSeconds();</div><div class="line"></div><div class="line">    month = month &lt; <span class="number">10</span> ? <span class="string">"0"</span> + month : month;</div><div class="line">    day = day &lt; <span class="number">10</span> ? <span class="string">"0"</span> + day : day;</div><div class="line">    hour = hour &lt; <span class="number">10</span> ? <span class="string">"0"</span> + hour : hour;</div><div class="line">    minute = minute &lt; <span class="number">10</span> ? <span class="string">"0"</span> + minute : minute;</div><div class="line">    second = second &lt; <span class="number">10</span> ? <span class="string">"0"</span> + second : second;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> ret = year + <span class="string">'年'</span> + month + <span class="string">'月'</span> + day + <span class="string">'日 '</span> + hour + <span class="string">':'</span> + minute + <span class="string">":"</span> + second;</div><div class="line">    <span class="keyword">return</span> ret;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(getNowStringTime())</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
