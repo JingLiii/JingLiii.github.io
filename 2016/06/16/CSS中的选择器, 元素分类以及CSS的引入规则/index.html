@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS中的选择器, 元素分类以及CSS的引入规则 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="符合选择器交集选择器
+由标签选择器与类样式两个选择器构成,中间不能有空格
+同时符合两个条件的标签被选中并集选择器
+由逗号链接,可以同时对选中的多个样式,便签进行统一处理
+通常用于集体声明后代选择器
+使用空格进行隔开
+无论是子代,还是孙子辈的是,都可以被选中.只要是包含在内的标签.子元素选择器
+使用&amp;gt;号进行隔开,并在符号两边加空格
+只能选选中自代,无法选中其他的元素.显示模式
+只有文字才能组成">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS中的选择器, 元素分类以及CSS的引入规则 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/06/16/CSS中的选择器, 元素分类以及CSS的引入规则/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="符合选择器交集选择器
+由标签选择器与类样式两个选择器构成,中间不能有空格
+同时符合两个条件的标签被选中并集选择器
+由逗号链接,可以同时对选中的多个样式,便签进行统一处理
+通常用于集体声明后代选择器
+使用空格进行隔开
+无论是子代,还是孙子辈的是,都可以被选中.只要是包含在内的标签.子元素选择器
+使用&amp;gt;号进行隔开,并在符号两边加空格
+只能选选中自代,无法选中其他的元素.显示模式
+只有文字才能组成">
+<meta property="og:image" content="http://onh27ty1g.bkt.clouddn.com/CSS/CSShover%E4%BA%8B%E4%BB%B6.PNG">
+<meta property="og:image" content="http://onh27ty1g.bkt.clouddn.com/CSS/CSS%E6%9D%83%E9%87%8D%E9%97%AE%E9%A2%98.PNG">
+<meta property="og:updated_time" content="2017-03-27T12:25:19.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS中的选择器, 元素分类以及CSS的引入规则 | 张润昊">
+<meta name="twitter:description" content="符合选择器交集选择器
+由标签选择器与类样式两个选择器构成,中间不能有空格
+同时符合两个条件的标签被选中并集选择器
+由逗号链接,可以同时对选中的多个样式,便签进行统一处理
+通常用于集体声明后代选择器
+使用空格进行隔开
+无论是子代,还是孙子辈的是,都可以被选中.只要是包含在内的标签.子元素选择器
+使用&amp;gt;号进行隔开,并在符号两边加空格
+只能选选中自代,无法选中其他的元素.显示模式
+只有文字才能组成">
+<meta name="twitter:image" content="http://onh27ty1g.bkt.clouddn.com/CSS/CSShover%E4%BA%8B%E4%BB%B6.PNG">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS中的选择器, 元素分类以及CSS的引入规则</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-06-16" class="post-meta__date date">2016-06-16</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="符合选择器"><a href="#符合选择器" class="headerlink" title="符合选择器"></a>符合选择器</h2><h3 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h3><ul>
+<li>由标签选择器与类样式两个选择器构成,中间不能有空格</li>
+<li>同时符合两个条件的标签被选中<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3></li>
+<li>由逗号链接,可以同时对选中的多个样式,便签进行统一处理</li>
+<li>通常用于集体声明<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3></li>
+<li>使用空格进行隔开</li>
+<li>无论是子代,还是孙子辈的是,都可以被选中.只要是包含在内的标签.<h3 id="子元素选择器"><a href="#子元素选择器" class="headerlink" title="子元素选择器"></a>子元素选择器</h3></li>
+<li>使用&gt;号进行隔开,并在符号两边加空格</li>
+<li>只能选选中自代,无法选中其他的元素.<h2 id="显示模式"><a href="#显示模式" class="headerlink" title="显示模式"></a>显示模式</h2></li>
+<li><strong>只有文字才能组成段落,所有p标签,h标签中无法再放置其他的标签</strong></li>
+<li><strong>链接中不能再放链接</strong><h3 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h3></li>
+<li>独占一行</li>
+<li>能够设置宽高</li>
+<li>block</li>
+<li>高度,行高,内外边距都能控制</li>
+<li>默认为容器的100%.</li>
+<li>可以容纳内联元素和其他块级元素</li>
+<li><div></div><ul></ul><h3 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h3></li>
+<li>不占有独立一行</li>
+<li>需要内容进行撑开,没有宽高</li>
+<li><code>&lt;span&gt;&lt;/span&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</code></li>
+<li>只能解说文本和其他行内元素,但是<code>&lt;a&gt;&lt;/a&gt;</code>特殊.</li>
+<li>只能设置水平方向的内外边距,垂直方向无效<h3 id="行内块元素"><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h3></li>
+<li><code>&lt;input /&gt;&lt;input /&gt;&lt;td&gt;&lt;/td&gt;</code></li>
+<li>和相邻的行内元素在一行上面,但是之间会有空隙.</li>
+<li>默认宽度是其本身的母暗度</li>
+<li>宽,高,内外边距都可以控制.<h3 id="显示模式转化"><a href="#显示模式转化" class="headerlink" title="显示模式转化"></a>显示模式转化</h3><blockquote>
+<p>通过display进行转换</p>
+</blockquote>
+</li>
+<li>block: 转化为块元素</li>
+<li>inline: 转化为行内元素</li>
+<li>inline-block: 转换为行内块元素<h2 id="CSS伪类-伪元素"><a href="#CSS伪类-伪元素" class="headerlink" title="CSS伪类,伪元素"></a>CSS伪类,伪元素</h2><h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><blockquote>
+<p>用于文档状态的改变.动态事件<br><img src="http://onh27ty1g.bkt.clouddn.com/CSS/CSShover%E4%BA%8B%E4%BB%B6.PNG" alt=""></p>
+<h3 id="text-decoration"><a href="#text-decoration" class="headerlink" title="text-decoration"></a>text-decoration</h3></blockquote>
+</li>
+<li>none: 无下划线</li>
+<li>underline: 下划线(默认值)</li>
+<li>line-through: 删除线</li>
+<li>overline: 上划线<h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><blockquote>
+<p>在C3中详细讲解.</p>
+<h2 id="行高"><a href="#行高" class="headerlink" title="行高"></a>行高</h2></blockquote>
+</li>
+<li>一段文字分为:顶线,中线,基线,底线</li>
+<li>行高等于与元素的高度,上距离与下距离相等,元素中的文本内容就会在元素中保持垂直集中.</li>
+<li>行高设置单位直接计算,没有设置单位格局上一层的字体大小进行计算.<h2 id="引入CSS样式表"><a href="#引入CSS样式表" class="headerlink" title="引入CSS样式表"></a>引入CSS样式表</h2><h3 id="行内样式-内联样式"><a href="#行内样式-内联样式" class="headerlink" title="行内样式-内联样式"></a>行内样式-内联样式</h3><blockquote>
+<p>通过元素的style属性进行设置</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">标签名</span> <span class="attr">style</span>=<span class="string">"属性1:属性值1; 属性2:属性值2; 属性3:属性值3;"</span>&gt;</span> 内容 <span class="tag">&lt;/<span class="name">标签名</span>&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<h3 id="内部样式表-内嵌式"><a href="#内部样式表-内嵌式" class="headerlink" title="内部样式表-内嵌式"></a>内部样式表-内嵌式</h3><blockquote>
+<p>CSS代码集中写在head标签中<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></div><div class="line">    选择器 &#123;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<h3 id="外部样式表-外链式-推荐使用"><a href="#外部样式表-外链式-推荐使用" class="headerlink" title="外部样式表-外链式 (推荐使用)"></a>外部样式表-外链式 <strong>(推荐使用)</strong></h3><blockquote>
+<p>将所有的样式放到一个css文件中,通过link引入到html文件中<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"CSS文件的路径"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li>herf: 外部样式文件的地址</li>
+<li>type: 定义所连接文档的类型</li>
+<li>rel: 规定当前文档与被连接文档之间的关系<h3 id="导入式"><a href="#导入式" class="headerlink" title="导入式"></a>导入式</h3><blockquote>
+<p>在style标签的开头使用@import语句,即可导入外部样式表文件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span> &gt;</span><span class="undefined"></span></div><div class="line">@import url(css文件路径);或 @import "css文件路径";</div><div class="line">    /* 在此还可以存放其他CSS样式*/</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<h2 id="CSS三大特性"><a href="#CSS三大特性" class="headerlink" title="CSS三大特性"></a>CSS三大特性</h2><h3 id="层叠性"><a href="#层叠性" class="headerlink" title="层叠性"></a>层叠性</h3><blockquote>
+<p>权重相同的情况下,后面的样式,会覆盖前面的样式</p>
+<h3 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h3><p>父元素含有某属性,子元素也会应用这个属性<br>一般情况下:font-,text-,line-,color-,开头的属性,可以被继承</p>
+<h3 id="优先级-权重问题"><a href="#优先级-权重问题" class="headerlink" title="优先级-权重问题"></a>优先级-权重问题</h3><p><img src="http://onh27ty1g.bkt.clouddn.com/CSS/CSS%E6%9D%83%E9%87%8D%E9%97%AE%E9%A2%98.PNG" alt=""></p>
+<ul>
+<li>使用了!important声明的规则</li>
+<li>内嵌在html元素的style属性</li>
+<li>使用了id选择器的规则</li>
+<li>使用了类选择器,属性选择器(在C3中使用中括号),伪元素和伪类选择器的规则</li>
+<li>使用的元素标签选择器</li>
+<li>只包含一个通用选择器规则.</li>
+</ul>
+</blockquote>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

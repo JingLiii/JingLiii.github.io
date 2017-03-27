@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS滑动门技术, 常用技巧与文本属性 | 张润昊 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="JingLiii">
+    
+    
+
+    <meta name="description" content="CSS滑动门技术, 常用技巧与文本属性
+利用背景位置和盒子padding撑开宽度,以适应不同数字的导航栏12345&amp;lt;li&amp;gt;   &amp;lt;a href=&quot;#&quot;&amp;gt;        &amp;lt;span&amp;gt;导航栏内容&amp;lt;/span&amp;gt;   &amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+
+a设置背景左侧,padding撑开适合宽度
+span设置背景右侧,padding撑开宽度,剩下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS滑动门技术, 常用技巧与文本属性 | 张润昊">
+<meta property="og:url" content="http://yoursite.com/2016/06/25/CSS滑动门技术, 常用技巧与文本属性/index.html">
+<meta property="og:site_name" content="张润昊">
+<meta property="og:description" content="CSS滑动门技术, 常用技巧与文本属性
+利用背景位置和盒子padding撑开宽度,以适应不同数字的导航栏12345&amp;lt;li&amp;gt;   &amp;lt;a href=&quot;#&quot;&amp;gt;        &amp;lt;span&amp;gt;导航栏内容&amp;lt;/span&amp;gt;   &amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+
+a设置背景左侧,padding撑开适合宽度
+span设置背景右侧,padding撑开宽度,剩下">
+<meta property="og:updated_time" content="2017-03-27T12:22:17.613Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS滑动门技术, 常用技巧与文本属性 | 张润昊">
+<meta name="twitter:description" content="CSS滑动门技术, 常用技巧与文本属性
+利用背景位置和盒子padding撑开宽度,以适应不同数字的导航栏12345&amp;lt;li&amp;gt;   &amp;lt;a href=&quot;#&quot;&amp;gt;        &amp;lt;span&amp;gt;导航栏内容&amp;lt;/span&amp;gt;   &amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+
+
+a设置背景左侧,padding撑开适合宽度
+span设置背景右侧,padding撑开宽度,剩下">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">张润昊</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS滑动门技术, 常用技巧与文本属性</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-06-25" class="post-meta__date date">2016-06-25</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="CSS滑动门技术-常用技巧与文本属性"><a href="#CSS滑动门技术-常用技巧与文本属性" class="headerlink" title="CSS滑动门技术, 常用技巧与文本属性"></a>CSS滑动门技术, 常用技巧与文本属性</h2><blockquote>
+<p>利用背景位置和盒子padding撑开宽度,以适应不同数字的导航栏<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>导航栏内容<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li>a设置背景左侧,padding撑开适合宽度</li>
+<li>span设置背景右侧,padding撑开宽度,剩下的由文字继续撑开宽度</li>
+<li>a包含span,整个导航栏都是可以点击的.<h2 id="CSS常用技巧"><a href="#CSS常用技巧" class="headerlink" title="CSS常用技巧"></a>CSS常用技巧</h2><h3 id="margin负值"><a href="#margin负值" class="headerlink" title="margin负值"></a>margin负值</h3><blockquote>
+<p>可以改变盒子的位置,与其他的盒子进行重合</p>
+</blockquote>
+</li>
+<li>注意:<ul>
+<li>定位盒子的层级高于浮动和标准流</li>
+<li>提高定位盒子的层级用z-index<h3 id="CSS三角的写法"><a href="#CSS三角的写法" class="headerlink" title="CSS三角的写法"></a>CSS三角的写法</h3><blockquote>
+<p>利用代码实现三角形的形状组合</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>主要使用的是: border-width,<strong>border-color</strong>,border-style ,在颜色中,给需要方向的边框颜色,其他的均改为透明<h3 id="网页添加icon图标"><a href="#网页添加icon图标" class="headerlink" title="网页添加icon图标"></a>网页添加icon图标</h3></li>
+<li><a href="http://www.bitbug.net/" target="_blank" rel="external">http://www.bitbug.net/</a> : 可以生产小图标</li>
+<li><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; /&gt;</code><h3 id="logo优化"><a href="#logo优化" class="headerlink" title="logo优化"></a>logo优化</h3></li>
+<li>logo中放置h1标签,表示重要性</li>
+<li>h1中放置a链接,和logo盒子一样大</li>
+<li>a链接中放置网站的标题</li>
+<li>使用text-indnt,或者padding挤开盒子,并使用overflow切割</li>
+<li>向链接中添加title.<h2 id="CSS文本属性"><a href="#CSS文本属性" class="headerlink" title="CSS文本属性"></a>CSS文本属性</h2><h3 id="letter-spacing-字间距"><a href="#letter-spacing-字间距" class="headerlink" title="letter-spacing: 字间距"></a>letter-spacing: 字间距</h3><blockquote>
+<p>字符与字符中空白的大小,允许使用负值,默认为normal.</p>
+<h3 id="wording-spacing-单词间距"><a href="#wording-spacing-单词间距" class="headerlink" title="wording-spacing: 单词间距"></a>wording-spacing: 单词间距</h3><p>英文单词之间的间距,中文无效</p>
+<h3 id="word-break-自动换行"><a href="#word-break-自动换行" class="headerlink" title="word-break: 自动换行"></a>word-break: 自动换行</h3></blockquote>
+</li>
+<li>normal: 允许浏览器默认的换行规则</li>
+<li>break-all: 允许单词内换行</li>
+<li>keep-all: 只能在半角空格和字符处换行<h3 id="white-space-空白符处理"><a href="#white-space-空白符处理" class="headerlink" title="white-space: 空白符处理"></a>white-space: 空白符处理</h3><blockquote>
+<p>设置空白符的处理方式</p>
+</blockquote>
+</li>
+<li>normal: 常规,文本中的空格.空行无效,满行后自动换行</li>
+<li>pre: 预格式化,按文档的书写格式保留空格、空行原样显示。</li>
+<li>nowrap：空格空行无效，强制文本不能换行，除非遇到换行标记 <br>。内容超出元素的边界也不换行，若超出浏览器页面则会自动增加滚动条<h3 id="text-overflow-文字溢出"><a href="#text-overflow-文字溢出" class="headerlink" title="text-overflow: 文字溢出"></a>text-overflow: 文字溢出</h3><blockquote>
+<p>设置或者检索是否使用一个省略标记(…)表示对象内文本的溢出</p>
+</blockquote>
+</li>
+<li>clip: 不显示省略的标记,而是简单的裁剪</li>
+<li>elipsis: 当对象内文本溢出是,使用省略标间(…)</li>
+</ul>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'letian'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
